@@ -1,1 +1,14 @@
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
 
+if (menuToggle) {
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+  });
+}
+
+function submitForm(event) {
+  event.preventDefault();
+  alert("Thank you! Your inquiry has been received. Iceland Media will contact you soon.");
+  event.target.reset();
+}
